@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="491.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+  <tabs>
+    <Tab text="Generator Password">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="434.0">
+               <children>
+                  <Label fx:id="lb1" layoutX="144.0" layoutY="14.0" prefHeight="30.0" prefWidth="203.0" text="Generator Password" textFill="#e10b0b">
+                     <font>
+                        <Font name="News706 BT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb2" layoutX="38.0" layoutY="56.0" text="Definições De Senha">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="check1" layoutX="38.0" layoutY="100.0" mnemonicParsing="false" onAction="#onCheck1Action" text="Conter Letras">
+                     <font>
+                        <Font name="Modern No. 20" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="check2" layoutX="38.0" layoutY="123.0" mnemonicParsing="false" text="Conter Números">
+                     <font>
+                        <Font name="Modern No. 20" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="check3" layoutX="38.0" layoutY="146.0" mnemonicParsing="false" text="Conter Carâcteres Especiais">
+                     <font>
+                        <Font name="Modern No. 20" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Label fx:id="lb3" layoutX="41.0" layoutY="229.0" text="Número De Carâcteres:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="num1" layoutX="38.0" layoutY="245.0" prefHeight="25.0" prefWidth="213.0" />
+                  <Label fx:id="lb4" layoutX="41.0" layoutY="270.0" text="Número De Senhas:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="num2" editable="true" layoutX="38.0" layoutY="286.0" prefHeight="25.0" prefWidth="213.0" />
+                  <Button fx:id="bt1" layoutX="38.0" layoutY="319.0" mnemonicParsing="false" onAction="#onBt1Action" prefHeight="36.0" prefWidth="214.0" text="Generator">
+                     <font>
+                        <Font name="News706 BT Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="list1" layoutX="277.0" layoutY="62.0" prefHeight="293.0" prefWidth="200.0" />
+                  <RadioButton fx:id="rd1" disable="true" layoutX="38.0" layoutY="169.0" mnemonicParsing="false" onAction="#onRd1Action" text="Apenas Letras Maiúsculas">
+                     <font>
+                        <Font name="Modern No. 20" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rd2" disable="true" layoutX="38.0" layoutY="192.0" mnemonicParsing="false" onAction="#onRd2Action" text="Apenas Letras Minúculas">
+                     <font>
+                        <Font name="Modern No. 20" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
